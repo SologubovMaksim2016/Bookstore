@@ -6,7 +6,9 @@ import {bookAddedToCart,
 import {connect} from 'react-redux';
 
 const ShoppingCartTables = ({items, total, onIncrease, onDecrease, onDelete}) => {
-    const renderRow = (item,idx) => {
+
+    const renderRow = (item,idx) => {       
+        
         const { id, title, count,total}  = item;
 
         return (
